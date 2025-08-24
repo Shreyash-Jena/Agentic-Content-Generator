@@ -1,56 +1,9 @@
-# {{crew_name}} Crew
-
-Welcome to the {{crew_name}} Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
-
-## Installation
-
-Ensure you have Python >=3.10 <3.14 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
-
-First, if you haven't already, install uv:
-
-```bash
+markdown<br># Educational Content Generator (CrewAI Flow)<br><br>Welcome to the **Educational Content Generator**, powered by [CrewAI](https://crewai.com). <br>This project uses a multi-agent AI system to generate structured, accurate, and engaging **educational materials** (study guides, explanations, lesson plans, etc.). It leverages the CrewAI framework to coordinate specialized agents that collaborate on content creation.<br><br>---<br><br>## ✨ Features<br>- Multi-agent flow for generating educational content<br>- Configurable agents with specialized roles (researcher, writer, editor, etc.)<br>- Automated workflow for creating study guides, reports, and teaching material<br>- Output in Markdown format for easy sharing or publishing<br><br>---<br><br>## 📦 Installation<br><br>Ensure you have **Python >=3.10, <3.14** installed. <br>This project uses [UV](https://docs.astral.sh/uv/) for dependency management.<br><br>1. Install **uv** (if not already installed):<br> bash
 pip install uv
-```
-
-Next, navigate to your project directory and install the dependencies:
-
-(Optional) Lock the dependencies and install them by using the CLI command:
-```bash
+<br><br>2. Navigate to your project directory and install dependencies:<br> bash
 crewai install
-```
-
-### Customizing
-
-**Add your `OPENAI_API_KEY` into the `.env` file**
-
-- Modify `src/guide_creator_flow/config/agents.yaml` to define your agents
-- Modify `src/guide_creator_flow/config/tasks.yaml` to define your tasks
-- Modify `src/guide_creator_flow/crew.py` to add your own logic, tools and specific args
-- Modify `src/guide_creator_flow/main.py` to add custom inputs for your agents and tasks
-
-## Running the Project
-
-To kickstart your flow and begin execution, run this from the root folder of your project:
-
-```bash
+<br><br>---<br><br>## ⚙️ Configuration<br><br>1. **Add your OpenAI API Key** <br> Create a `.env` file in the project root and add:<br> env
+OPENAI_API_KEY=your_api_key_here
+<br><br>2. **Customize your flow** <br> - Edit `src/guide_creator_flow/config/agents.yaml` → define your agents (roles, goals, tools) <br> - Edit `src/guide_creator_flow/config/tasks.yaml` → define your tasks <br> - Edit `src/guide_creator_flow/crew.py` → add logic, tools, or arguments <br> - Edit `src/guide_creator_flow/main.py` → customize user inputs and flow execution <br><br>---<br><br>## ▶️ Running the Project<br><br>From the root of your project, run:<br><br>bash
 crewai run
-```
-
-This command initializes the guide_creator_flow Flow as defined in your configuration.
-
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
-
-## Understanding Your Crew
-
-The guide_creator_flow Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
-
-## Support
-
-For support, questions, or feedback regarding the {{crew_name}} Crew or crewAI.
-
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
-
-Let's create wonders together with the power and simplicity of crewAI.
+<br><br>This will launch the **Educational Content Generator** flow and execute tasks as defined in your configuration. <br><br>📄 By default, the system generates a `report.md` file in the root folder with the generated educational content.<br><br>---<br><br>## 🧠 Understanding the Crew<br><br>The **Educational Content Generator Crew** consists of multiple agents: <br><br>- **Researcher Agent** → gathers accurate information <br>- **Writer Agent** → structures and drafts educational content <br>- **Editor Agent** → refines clarity, correctness, and style <br><br>Tasks are defined in `config/tasks.yaml`, and agents in `config/agents.yaml`. Together, they collaborate to produce high-quality educational resources.<br><br>---<br><br>## 🤝 Support<br><br>For support, questions, or feedback:<br><br>- 📚 [CrewAI Documentation](https://docs.crewai.com) <br>- 💻 [CrewAI GitHub Repository](https://github.com/joaomdmoura/crewai) <br>- 💬 [Join our Discord](https://discord.com/invite/X4JWnZnxPb) <br>- 🤖 [Chat with the Docs](https://chatg.pt/DWjSBZn) <br><br>---<br><br>Let’s build the future of learning with the power of CrewAI 🚀<br>
